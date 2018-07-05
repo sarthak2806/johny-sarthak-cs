@@ -8,7 +8,7 @@ for i in range(0,over):
     for ball in range(1,7):
         p =''.join(random.sample(result,1))
         if p!='O':
-            print("On the",ball,"st ball the result is",p)
+            print("On the",ball,"ball the result is",p)
             sleep(0.5)
             score+=int(p)
         else:
