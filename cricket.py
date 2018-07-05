@@ -20,3 +20,4 @@ for i in range(0,over):
     if cnt==10:
         break
 print("Total score is",score,"runs for",cnt,"wickets")
+input("press enter to continue....")
