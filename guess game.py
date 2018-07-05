@@ -13,3 +13,5 @@ while cnt<4:
         cnt+=1
 if cnt==4:
     print("The correct answer is",num)
+
+input("Press enter to continue...")
