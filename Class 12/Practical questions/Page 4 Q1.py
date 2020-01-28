@@ -2,7 +2,7 @@ def binary(n):
     if n>1:
         binary(n//2)
     print(n%2,end='')
-def octahedral(n):
+def octahedral(n,cnt):
     if n>7 or cnt==0:
         if cnt==0:
             return int((n%8)+octahedral(n//8,cnt+1))
@@ -41,7 +41,7 @@ while cont!='n':
     if option=='B' or option=='b':
         print(binary(number))
     elif option=='O' or option=='o':
-        print(octahedral(number))
+        print(octahedral(number,0))
     elif option=='H' or option=='h':
         print(hexadecimal(number))
     if input('Do you want to continue(y/n)?')=='n':
