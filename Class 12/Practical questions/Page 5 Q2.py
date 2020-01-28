@@ -12,7 +12,7 @@ pay=[]
 sex=[]
 
 for i in range(len(name)):
-    com='insert into club values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)'
+    com='insert into club values(%s,%s,%s,%s,%s,%s,%s)'
     var=[str(coachid[i]),str(name[i]),str(age[i]),str(sports[i]),str(dateofapp[i]),str(pay[i]),str(sex[i])]
     mycur.excute(com,var)
     mysql.commit()
@@ -20,5 +20,3 @@ for i in range(len(name)):
 mycur.execute('select * from club where sports="swimming"')
 mycur.execute('select coachname,pay,age,pay*0.15 Bonus from club')
 mycur.execute('insert into table values(11,"Rajender",25,”Football”,“2004/05/27”,4500,”M”)')
-
-    

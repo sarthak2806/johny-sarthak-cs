@@ -14,18 +14,15 @@ for x in a:
 print (sum)
 
 c=a*2
-for x in range(len(a)): 
+for x in range(len(a)):
     z=0
-    for y in range(x, x + len(a)): 
-        if b[z]==c[y]: 
+    for y in range(x, x + len(a)):
+        if b[z]==c[y]:
             z+=1
-        else: 
+        else:
             break
-    if z == len(a): 
+    if z == len(a):
         print ('Yes')
         break
 else:
     print ('No')
-
-
-
