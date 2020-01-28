@@ -15,4 +15,4 @@ for i in range(len(ordid)):
     mysql.commit()
 cur.execute('select count(item) from bill where ord_date(month)=3')
 cur.execute('select count(item) from bill where qty*price>1700')
-cur.execute('update bill set price=price+50')
+cur.execute('update bill set price=price+50')lol
