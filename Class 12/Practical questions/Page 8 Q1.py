@@ -5,14 +5,14 @@ def new_order():
     l.append(randint(100,999))
 def diqueue():
     global l
-    return l.pop(0)
+    return l.pop()
 def display():
     global l
     print(l)
 while True:
     option=(int(input('\n1)Order a meal\n2)Order is ready\n3)Waiting Queue\n4)Exit\nEnter the option number:')))
     if option==1:
-        enqueue()
+        new_order()
     elif option==2:
         print(diqueue())
         if len(l)==0:
