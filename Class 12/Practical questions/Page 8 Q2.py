@@ -5,7 +5,7 @@ cur.execute('create table Bill(Order_ID int, Cust_ID int,Item char(50),Ord_Date 
 ordid=[]
 cust=[]
 item=[]
-date=[]
+date=[1,2,3]
 qty=[]
 price=[]
 for i in range(len(ordid)):
