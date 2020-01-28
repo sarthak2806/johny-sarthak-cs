@@ -3,13 +3,13 @@ def binary(n):
         binary(n//2)
     print(n%2,end='')
 def octahedral(n):
-    if num>7 or cnt==0:
+    if n>7 or cnt==0:
         if cnt==0:
-            return int((num%8)+octahedral(num//8,cnt+1))
+            return int((n%8)+octahedral(n//8,cnt+1))
         else:
-            return int((num%8)*(10**cnt)+octahedral(num//8,cnt+1))
-    elif num<=7 and num>0:
-        return num*(10**cnt)
+            return int((n%8)*(10**cnt)+octahedral(n//8,cnt+1))
+    elif n<=7 and n>0:
+        return n*(10**cnt)
 def hexadecimal(n):
     l=[]
     x=n//16
