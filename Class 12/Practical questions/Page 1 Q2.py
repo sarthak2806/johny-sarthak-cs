@@ -27,4 +27,3 @@ cur=mysql.cursor()
 cur.execute('select EMP_Name,Salary,salary*12 Annual_Salary from emp')
 for q in cur:
     print(cur)
-nljknk
