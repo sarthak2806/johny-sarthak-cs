@@ -7,10 +7,15 @@ class1=[7,8,7,7,9,10]
 name=['Sameer','Sujit','Kamal','Veena','Archana','Arpit']
 game=['Swimming','Skating','Football','Tennis','Cricket','Athletics']
 grade=['A','C','B','A','A','C']
+for i in range(len(stud)):
+    com='insert into sports values(%s,%s,%s,%s,%s)'
+    val=(str(stud[i]),str(class1[i]),str(name[i]),str(game[i]),str(grade[i]))
+    cur.execute(com,val)
+    mysql.commit()
 cur.execute('select count(Stud_No) from Sports where grade="A" and game="Cricket"')
-for i in cur:
-    print(i)
+for x in cur:
+    print(x)
 cur.execute('alter table sports add column Address char(50)')
 cur.execute('select Game from sports where name like "A%"')
-for i in cur:
-    print(i)
+for y in cur:
+    print(y)
