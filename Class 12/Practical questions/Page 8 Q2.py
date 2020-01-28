@@ -6,7 +6,7 @@ ordid=[]
 cust=[]
 item=[]
 date=[]
-qty[]
+qty=[]
 price=[]
 for i in range(len(ordid)):
     com='insert into bill values(%s,%s,%s,%s,%s,%s)'
